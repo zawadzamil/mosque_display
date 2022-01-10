@@ -17,17 +17,27 @@
 </head>
 
 <body class="bg-gray-200">
-    <div class="mt-8  title-main text-center">
-        <p> <span class="shadow-xl text-5xl px-8 ">Islamic Association of Saskatchewan</span>
-            <span class=" ml-12 text-2xl shadow-xl    ">Date:<span id="date"></span></span>
-        </p>
+    <!--Clock-->
+    <div class="grid  grid-cols-1 bg-black mt-0 text-center   shadow-2xl  grid-flow-row clock ">
+        <div class="">
+            <span id="time" class="  font-bold  ">
+                
+            </span>
+            <span id = "dateBottom" >DDDD</span>
+            
+        </div>
+         <!--Clock End-->
+
+       
+
     </div>
+   
     <div class="min-h-screen  item-center text-center">
-        <div class="flex-1 max-w-8xl p-10">
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-8 grid-flow-row ">
-                <div class="  shadow-xl rounded-lg   ">
-                    <h1 class="text-4xl font-bold pb-4">Prayer Time</h1>
-                    <table class="table-auto  sm:w-full ">
+        <div class="flex-1 max-w-8xl px-10">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-1 grid-flow-row ">
+                <div class="   rounded-lg p-10  ">
+                   
+                    <table class="table-auto  sm:w-full  ">
                         <thead class="bg-gray-800">
                             <tr>
                                 <th>Prayer</th>
@@ -38,79 +48,80 @@
                         <tbody>
                             <tr>
                                 <td>Fazar</td>
-                                <td>5.45</td>
-                                <td>5.55</td>
+                                <td id="f-start">05:00 AM</td>
+                                <td id="f-end">05:23 AM</td>
                             </tr>
                             <tr>
-                                <td>Fazar</td>
-                                <td>5.45</td>
-                                <td>5.55</td>
+                                <td>Dhuhr</td>
+                                <td id="d-start">01:00 PM</td>
+                                <td id="d-end">01:30 PM</td>
                             </tr>
                             <tr>
-                                <td>Fazar</td>
-                                <td>5.45</td>
-                                <td>5.55</td>
+                                <td>Asr</td>
+                                <td id="a-start">03:30 PM</td>
+                                <td id="a-end">03:53 PM</td>
                             </tr>
                             <tr>
-                                <td>Fazar</td>
-                                <td>5.45</td>
-                                <td>5.55</td>
+                                <td>Maghrib</td>
+                                <td id="m-start">05:15 PM</td>
+                                <td id="m-end">05:29 PM</td>
                             </tr>
                             <tr>
-                                <td>Fazar</td>
-                                <td>5.45</td>
-                                <td>5.55</td>
+                                <td>Isha</td>
+                                <td id="i-start">06:20 PM</td>
+                                <td id="i-end">06:49 PM</td>
                             </tr>
                         </tbody>
 
                     </table>
 
                 </div>
-                <div class=" col-span-2  border-2 border-gray-800 rounded-lg   ">
-                    
+                <div class=" rounded-lg text-center  ">
+                    <div class="imgbox ">
+
                         <img class="mySlides"  src="assets/images/m1.jpg">
                         <img class="mySlides"  src="assets/images/m2.jpg">
                         <img class="mySlides"  src="assets/images/m3.jpg">
                         <img class="mySlides"  src="assets/images/m4.jpg">
                         <img class="mySlides"  src="assets/images/m5.jpg">
+                    </div>
+                    
+                       
 
                     
 
                 </div>
 
             </div>
-            <div class="grid  grid-cols-1 slider-text shadow-2xl rounded-lg grid-flow-row mt-8 ">
+            <!--Mosque Name Section-->
+            <div class="mt-2  title-main text-center">
+                <p> <span class="shadow-xl text-4xl px-8 ">Islamic Association of Saskatchewan</span>
+                    <span class=" ml-12 text-2xl shadow-xl    ">Date:<span id="date"></span></span>
+                </p>
+            </div>
+            <!--End Mosque Name Section-->
+            <!--Text Slider Section-->
+            <div class="grid  grid-cols-1 slider-text shadow-2xl rounded-lg grid-flow-row mt-4  ">
                 
                     <div class="scrolling">
                         <h3 >Lorem ipsum dolor sit amet, consectetur </h3>
                        
                     </div>
-                
-
-               
-
+            
             </div>
-            <div class="grid  grid-cols-1 bg-black mt-8   shadow-2xl rounded-lg grid-flow-row mt-8 ">
-                <div class="">
-                    <span id="time" class="  font-bold  ">
-                        
-                    </span>
-                    <span id = "dateBottom" >DDDD</span>
-                    
-                </div>
-
-               
-
-            </div>
+             <!--End Text Slider Section-->
 
         </div>
     </div>
 
 
-
+    
 
 
     <script src="js/app.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/af.min.js" integrity="sha512-xqLRtzampIqoDxDRyklcYk0fYDa7axgiSjTmyJFuzcK8vh1NDzqVPxcjIAvjb4t04u+rKMssANhgamUSnU71Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script></script>
 </body>
