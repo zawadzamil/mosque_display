@@ -13,31 +13,54 @@
     <link href="https://www.dafontfree.net/embed/cm9kamEtcm9kamEmZGF0YS80OS9yLzM0NzE2L1JvZGphLnR0Zg" rel="stylesheet"
         type="text/css" />
 
+        <!--Bangla Font-->
+        <link href="https://fonts.maateen.me/mukti/font.css" rel="stylesheet">
+
 
 </head>
 
 <body class="bg-gray-200">
     <!--Clock-->
-    <div class="grid  grid-cols-1 bg-black mt-0 text-center   shadow-2xl  grid-flow-row clock ">
-        <div class="">
+    <div class="clock-section">
+        <div class="clock text-center">
             <span id="time" class="  font-bold  ">
-                
-            </span>
-            <span id = "dateBottom" >DDDD</span>
             
+            </span>
+            <span id = "dateBottom" ></span>
         </div>
+        
+       
+        
+    
+
+    </div>
+       
          <!--Clock End-->
 
        
 
-    </div>
+    
+
+   
    
     <div class="min-h-screen  item-center text-center">
-        <div class="flex-1 max-w-8xl px-10">
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-1 grid-flow-row ">
-                <div class="   rounded-lg p-10  ">
-                   
-                    <table class="table-auto  sm:w-full  ">
+        <!--Toggle Switch-->
+        <label class="switch mt-4">
+            <input type="checkbox" id="togBtn">
+            <div class="slider round">
+             <!--ADDED HTML -->
+             <span class="on">Bangle</span>
+             <span class="off">English</span>
+             <!--END-->
+            </div>
+           </label>
+        <!--End Toggle Switch-->
+        <div class="flex-1 max-w-8xl ">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-1 grid-flow-row pb-4 ">
+                <!--Table Section-->
+                <div class="   rounded-lg ml-12 mt-2  ">
+                    <!--English Table-->
+                    <table class="table-auto  sm:w-full  " id="eng-table">
                         <thead class="bg-gray-800">
                             <tr>
                                 <th>Prayer</th>
@@ -71,12 +94,71 @@
                                 <td id="i-start">06:20 PM</td>
                                 <td id="i-end">06:49 PM</td>
                             </tr>
+                            <tr>
+                                <td>Jummah</td>
+                                <td id="j-start">10:26 PM</td>
+                                <td id="j-end">01:30 PM</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <!--End English Table-->
+
+
+                    <!--Bangla Table-->
+
+                    <table class="table-auto  sm:w-full  " id="ban-table">
+                        <thead class="bg-red-800">
+                            <tr>
+                                <th>নামাজ</th>
+                                <th class="ml-4">আজান</th>
+                                <th>জামাত</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ফজর</td>
+                                <td >০৫:০০ AM</td>
+                                <td >০৫:২৩ AM</td>
+                            </tr>
+                            <tr>
+                                <td>জোহর</td>
+                                <td >০১:০০ PM</td>
+                                <td >০১:৩০ PM</td>
+                            </tr>
+                            <tr>
+                                <td>আছর</td>
+                                <td >০৩:৩০ PM</td>
+                                <td >০৩:৫৩ PM</td>
+                            </tr>
+                            <tr>
+                                <td>মাগরিব</td>
+                                <td >০৫:১৫ PM</td>
+                                <td >০৫:২৯ PM</td>
+                            </tr>
+                            <tr>
+                                <td>এশা </td>
+                                <td>০৬:২০ PM</td>
+                                <td >০৬:৪৯ PM</td>
+                            </tr>
+                            <tr>
+                                <td>জুম্মা</td>
+                                <td>০১:০০ PM</td>
+                                <td >০১:৩০ PM</td>
+                            </tr>
                         </tbody>
 
                     </table>
 
+                      <!--End Bangla Table-->
+                    
+
+
                 </div>
-                <div class=" rounded-lg text-center  ">
+                <!--End Table Section-->
+
+                 <!--Image Slider -->
+                <div class=" rounded-lg text-center px-10 ">
                     <div class="imgbox ">
 
                         <img class="mySlides"  src="assets/images/m1.jpg">
@@ -85,23 +167,25 @@
                         <img class="mySlides"  src="assets/images/m4.jpg">
                         <img class="mySlides"  src="assets/images/m5.jpg">
                     </div>
-                    
-                       
-
-                    
-
+                     
                 </div>
+                   <!--End Image Slider -->
 
             </div>
             <!--Mosque Name Section-->
-            <div class="mt-2  title-main text-center">
-                <p> <span class="shadow-xl text-4xl px-8 ">Islamic Association of Saskatchewan</span>
-                    <span class=" ml-12 text-2xl shadow-xl    ">Date:<span id="date"></span></span>
+            <div class="  title-main text-center mb-2">
+                <p> <span class="shadow-xl text-4xl arabic  px-8 rounded-lg" id="arabic">Islamic Association of Saskatchewan</span>
+                 
+                </p>
+                <p> <span class="shadow-xl text-3xl bangla  px-8 rounded-lg" id="bangla">ইসলামিক এসোসিয়েশন অফ সিসক্যাচুয়েন</span>
+                 
                 </p>
             </div>
             <!--End Mosque Name Section-->
+
+
             <!--Text Slider Section-->
-            <div class="grid  grid-cols-1 slider-text shadow-2xl rounded-lg grid-flow-row mt-4  ">
+            <div class="grid  grid-cols-1 slider-text shadow-2xl rounded-lg grid-flow-row   " id="slider">
                 
                     <div class="scrolling">
                         <h3 >Lorem ipsum dolor sit amet, consectetur </h3>
