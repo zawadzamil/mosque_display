@@ -1,0 +1,115 @@
+body {
+    background: url('images/bg1.jpg') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+.logo {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 51px;
+    font-size: 1.7em;
+    color: rgba(250, 235, 215, 0.753);
+}
+
+.login-block {
+    width: 320px;
+    padding: 20px;
+    background-color: rgba(48, 37, 4, 0.493);
+    border-radius: 10px;
+    border-top: 5px solid #eb868b;
+    margin: 0 auto;
+    border: 1px;
+    border-style: solid;
+    border-color: #ebe7e7;
+    
+   
+}
+
+.login-block h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+font-size: 52px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+color: rgba(246, 246, 246, 0.678)
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(248, 10, 208);
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+    color: #fff;
+    
+}
+
+.login-block input#username {
+    background: #99062b52 url('images/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+   
+    
+}
+
+.login-block input#username:focus {
+    background: #F8FFBC  url('images/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+
+}
+.login-block input#username:hover {
+    background: #F8FFBC  url('images/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+
+.login-block input#password {
+    background: #360222ad url('images/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #F8FFBC url('images/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+.login-block input#password:hover {
+    background: #F8FFBC url('images/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #ff7b81;
+}
